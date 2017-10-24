@@ -6,8 +6,6 @@ php:
     
 env: WP_TRAVISCI=travis:phpunit
 
-script: build.sh
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get -qq install git-ftp
