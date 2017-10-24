@@ -18,7 +18,7 @@ global:
     - "FTP_PASSWORD=Bit@123"
 after_success:
     - sudo apt-get -qq install git-ftp
-    - sudo git ftp push --user $FTP_USER --passwd $FTP_PASSWORD ftp://216.250.115.23/haveitall/
+    - sudo git ftp init --user $FTP_USER --passwd $FTP_PASSWORD ftp://216.250.115.23/deploy_test/
 
 # optionally set up exclutions and allowed failures in the matrix
 matrix:
