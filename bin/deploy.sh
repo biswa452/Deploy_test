@@ -1,2 +1,2 @@
 # Setup
-lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_HOST; set ssl:verify-certificate no; mirror -R . public_html"
+lftp -c "open -u BITBUCKET,Bit@123 ftp://216.250.115.23/; set ssl:verify-certificate no; mirror -R . deploy_test"
