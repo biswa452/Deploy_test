@@ -13,6 +13,12 @@ env:
   - DB=mysql
   - DB=pgsql
 
+global:
+    - "FTP_USER=BITBUCKET"
+    - "FTP_PASSWORD=Bit@123"
+after_success:
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://216.250.115.23/deploy_test/"
+
 # optionally set up exclutions and allowed failures in the matrix
 matrix:
   exclude:
