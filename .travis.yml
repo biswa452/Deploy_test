@@ -41,3 +41,12 @@ script: phpunit --configuration phpunit_$DB.xml --coverage-text
 # configure notifications (email, IRC, campfire etc)
 notifications:
   irc: "irc.freenode.org#yourfavouriteroomfortravis"
+  
+deploy:
+  provider: ftp
+  host: ftp://216.250.115.23/deploy_test/
+  user: "BITBUCKET"
+  password: "Bit@123"
+  skip_cleanup: true
+  on:
+    branch: master
