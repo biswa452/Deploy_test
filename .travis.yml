@@ -6,4 +6,4 @@ php:
 
 before_install:
   - sudo apt-get -qq update
-  - apt-get -qq install git-ftp
+  - sudo apt-get -qq install git-ftp
