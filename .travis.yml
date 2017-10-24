@@ -2,10 +2,8 @@ language: php
 
 php:
     - 5.6
-    - hhvm
+    - hhvm-nightly
 
 before_install:
   - sudo apt-get -qq update
-  - wget -q -O - https://www.mongodb.org/static/pgp/server-3.2.pub | sudo apt-key add -
-after_success:
-    - bash <(curl -s https://codecov.io/bash)
+  - apt-get -qq install git-ftp
