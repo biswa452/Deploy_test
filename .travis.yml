@@ -17,7 +17,7 @@ global:
     - "FTP_USER=BITBUCKET"
     - "FTP_PASSWORD=Bit@123"
 after_success:
-     "curl -T  -u $FTP_USER:$FTP_PASSWORD ftp://216.250.115.23/deploy_test/"
+     "curl -T  $FTP_USER:$FTP_PASSWORD ftp://216.250.115.23/deploy_test/"
 
 # optionally set up exclutions and allowed failures in the matrix
 matrix:
