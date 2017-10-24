@@ -6,6 +6,6 @@ php:
 
 before_install:
   - sudo apt-get -qq update
-  - $ wget -q -O - https://www.mongodb.org/static/pgp/server-3.2.pub | sudo apt-key add -
+  - wget -q -O - https://www.mongodb.org/static/pgp/server-3.2.pub | sudo apt-key add -
 after_success:
     - bash <(curl -s https://codecov.io/bash)
